@@ -1,0 +1,442 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{328088C5-05EF-469C-A6C5-79A9A6CDA161}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LifeLineRoad</RootNamespace>
+    <AssemblyName>LifeLineRoad</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.60919.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bootstrap\css\bootstrap-datetimepicker.css" />
+    <Content Include="bootstrap\css\bootstrap-datetimepicker.min.css" />
+    <Content Include="bootstrap\css\bootstrap-theme.css" />
+    <Content Include="bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="bootstrap\css\bootstrap.css" />
+    <Content Include="bootstrap\css\bootstrap.min.css" />
+    <Content Include="bootstrap\css\printStyle.css" />
+    <Content Include="bootstrap\css\Style.css" />
+    <Content Include="bootstrap\js\bootstrap-datetimepicker.js" />
+    <Content Include="bootstrap\js\bootstrap-datetimepicker.min.js" />
+    <Content Include="bootstrap\js\bootstrap.js" />
+    <Content Include="bootstrap\js\bootstrap.min.js" />
+    <Content Include="bootstrap\js\locales\bootstrap-datetimepicker.ar.js" />
+    <Content Include="bootstrap\js\locales\bootstrap-datetimepicker.az.js" />
+    <Content Include="bootstrap\js\locales\bootstrap-datetimepicker.bg.js" />
+    <Content Include="bootstrap\js\locales\bootstrap-datetimepicker.bn.js" />
+    <Content Include="bootstrap\js\locales\bootstrap-datetimepicker.ca.js" />
+    <Content Include="bootstrap\js\locales\bootstrap-datetimepicker.cs.js" />
+    <Content Include="bootstrap\js\locales\bootstrap-datetimepicker.da.js" />
+    <Content Include="bootstrap\js\locales\bootstrap-datetimepicker.de.js" />
+    <Content Include="bootstrap\js\locales\bootstrap-datetimepicker.ee.js" />
+    <Content Include="bootstrap\js\locales\bootstrap-datetimepicker.el.js" />
+    <Content Include="bootstrap\js\locales\bootstrap-datetimepicker.es.js" />
+    <Content Include="bootstrap\js\locales\bootstrap-datetimepicker.fi.js" />
+    <Content Include="bootstrap\js\locales\bootstrap-datetimepicker.fr.js" />
+    <Content Include="bootstrap\js\locales\bootstrap-datetimepicker.he.js" />
+    <Content Include="bootstrap\js\locales\bootstrap-datetimepicker.hr.js" />
+    <Content Include="bootstrap\js\locales\bootstrap-datetimepicker.hu.js" />
+    <Content Include="bootstrap\js\locales\bootstrap-datetimepicker.hy.js" />
+    <Content Include="bootstrap\js\locales\bootstrap-datetimepicker.id.js" />
+    <Content Include="bootstrap\js\locales\bootstrap-datetimepicker.is.js" />
+    <Content Include="bootstrap\js\locales\bootstrap-datetimepicker.it.js" />
+    <Content Include="bootstrap\js\locales\bootstrap-datetimepicker.ja.js" />
+    <Content Include="bootstrap\js\locales\bootstrap-datetimepicker.ka.js" />
+    <Content Include="bootstrap\js\locales\bootstrap-datetimepicker.ko.js" />
+    <Content Include="bootstrap\js\locales\bootstrap-datetimepicker.lt.js" />
+    <Content Include="bootstrap\js\locales\bootstrap-datetimepicker.lv.js" />
+    <Content Include="bootstrap\js\locales\bootstrap-datetimepicker.ms.js" />
+    <Content Include="bootstrap\js\locales\bootstrap-datetimepicker.nb.js" />
+    <Content Include="bootstrap\js\locales\bootstrap-datetimepicker.nl.js" />
+    <Content Include="bootstrap\js\locales\bootstrap-datetimepicker.no.js" />
+    <Content Include="bootstrap\js\locales\bootstrap-datetimepicker.pl.js" />
+    <Content Include="bootstrap\js\locales\bootstrap-datetimepicker.pt-BR.js" />
+    <Content Include="bootstrap\js\locales\bootstrap-datetimepicker.pt.js" />
+    <Content Include="bootstrap\js\locales\bootstrap-datetimepicker.ro.js" />
+    <Content Include="bootstrap\js\locales\bootstrap-datetimepicker.rs-latin.js" />
+    <Content Include="bootstrap\js\locales\bootstrap-datetimepicker.rs.js" />
+    <Content Include="bootstrap\js\locales\bootstrap-datetimepicker.ru.js" />
+    <Content Include="bootstrap\js\locales\bootstrap-datetimepicker.sk.js" />
+    <Content Include="bootstrap\js\locales\bootstrap-datetimepicker.sl.js" />
+    <Content Include="bootstrap\js\locales\bootstrap-datetimepicker.sv.js" />
+    <Content Include="bootstrap\js\locales\bootstrap-datetimepicker.sw.js" />
+    <Content Include="bootstrap\js\locales\bootstrap-datetimepicker.th.js" />
+    <Content Include="bootstrap\js\locales\bootstrap-datetimepicker.tr.js" />
+    <Content Include="bootstrap\js\locales\bootstrap-datetimepicker.ua.js" />
+    <Content Include="bootstrap\js\locales\bootstrap-datetimepicker.uk.js" />
+    <Content Include="bootstrap\js\locales\bootstrap-datetimepicker.zh-CN.js" />
+    <Content Include="bootstrap\js\locales\bootstrap-datetimepicker.zh-TW.js" />
+    <Content Include="bootstrap\js\moment.js" />
+    <Content Include="bootstrap\js\npm.js" />
+    <Content Include="ContentPages\BranchMaster.aspx" />
+    <Content Include="ContentPages\BranchMasterList.aspx" />
+    <Content Include="ContentPages\Invoice.aspx" />
+    <Content Include="ContentPages\InvoiceList.aspx" />
+    <Content Include="ContentPages\Memo.aspx" />
+    <Content Include="ContentPages\CompanyMaster.aspx" />
+    <Content Include="ContentPages\CompanyMasterList.aspx" />
+    <Content Include="ContentPages\ConsigneeMaster.aspx" />
+    <Content Include="ContentPages\ConsigneeMasterList.aspx" />
+    <Content Include="ContentPages\ConsignorMaster.aspx" />
+    <Content Include="ContentPages\ConsignorMasterList.aspx" />
+    <Content Include="ContentPages\DriverMaster.aspx" />
+    <Content Include="ContentPages\DriverMasterList.aspx" />
+    <Content Include="ContentPages\EmployeeMaster.aspx" />
+    <Content Include="ContentPages\EmployeeMasterList.aspx" />
+    <Content Include="ContentPages\ExpenseMaster.aspx" />
+    <Content Include="ContentPages\ExpenseMasterList.aspx" />
+    <Content Include="ContentPages\MemoList.aspx" />
+    <Content Include="ContentPages\MemoPrint.aspx" />
+    <Content Include="ContentPages\UserMaster.aspx" />
+    <Content Include="ContentPages\UserMasterList.aspx" />
+    <Content Include="ContentPages\VehicleMaster.aspx" />
+    <Content Include="ContentPages\VehicleMasterList.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="font-awesome\css\font-awesome.css" />
+    <Content Include="font-awesome\css\font-awesome.min.css" />
+    <Content Include="Images\Life Line Road VC.png" />
+    <Content Include="Images\Rupee_symbol.png" />
+    <Content Include="LoginPage.aspx" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-3.2.1.js" />
+    <Content Include="Scripts\jquery-3.2.1.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WebServices\ConsigneesList.asmx" />
+    <Content Include="WebServices\VehiclesList.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ContentPages\BranchMaster.aspx.cs">
+      <DependentUpon>BranchMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentPages\BranchMaster.aspx.designer.cs">
+      <DependentUpon>BranchMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentPages\BranchMasterList.aspx.cs">
+      <DependentUpon>BranchMasterList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentPages\BranchMasterList.aspx.designer.cs">
+      <DependentUpon>BranchMasterList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentPages\Invoice.aspx.cs">
+      <DependentUpon>Invoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentPages\Invoice.aspx.designer.cs">
+      <DependentUpon>Invoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentPages\InvoiceList.aspx.cs">
+      <DependentUpon>InvoiceList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentPages\InvoiceList.aspx.designer.cs">
+      <DependentUpon>InvoiceList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentPages\Memo.aspx.cs">
+      <DependentUpon>Memo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentPages\Memo.aspx.designer.cs">
+      <DependentUpon>Memo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentPages\CompanyMaster.aspx.cs">
+      <DependentUpon>CompanyMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentPages\CompanyMaster.aspx.designer.cs">
+      <DependentUpon>CompanyMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentPages\CompanyMasterList.aspx.cs">
+      <DependentUpon>CompanyMasterList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentPages\CompanyMasterList.aspx.designer.cs">
+      <DependentUpon>CompanyMasterList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentPages\ConsigneeMaster.aspx.cs">
+      <DependentUpon>ConsigneeMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentPages\ConsigneeMaster.aspx.designer.cs">
+      <DependentUpon>ConsigneeMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentPages\ConsigneeMasterList.aspx.cs">
+      <DependentUpon>ConsigneeMasterList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentPages\ConsigneeMasterList.aspx.designer.cs">
+      <DependentUpon>ConsigneeMasterList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentPages\ConsignorMaster.aspx.cs">
+      <DependentUpon>ConsignorMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentPages\ConsignorMaster.aspx.designer.cs">
+      <DependentUpon>ConsignorMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentPages\ConsignorMasterList.aspx.cs">
+      <DependentUpon>ConsignorMasterList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentPages\ConsignorMasterList.aspx.designer.cs">
+      <DependentUpon>ConsignorMasterList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentPages\DriverMaster.aspx.cs">
+      <DependentUpon>DriverMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentPages\DriverMaster.aspx.designer.cs">
+      <DependentUpon>DriverMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentPages\DriverMasterList.aspx.cs">
+      <DependentUpon>DriverMasterList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentPages\DriverMasterList.aspx.designer.cs">
+      <DependentUpon>DriverMasterList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentPages\EmployeeMaster.aspx.cs">
+      <DependentUpon>EmployeeMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentPages\EmployeeMaster.aspx.designer.cs">
+      <DependentUpon>EmployeeMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentPages\EmployeeMasterList.aspx.cs">
+      <DependentUpon>EmployeeMasterList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentPages\EmployeeMasterList.aspx.designer.cs">
+      <DependentUpon>EmployeeMasterList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentPages\ExpenseMaster.aspx.cs">
+      <DependentUpon>ExpenseMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentPages\ExpenseMaster.aspx.designer.cs">
+      <DependentUpon>ExpenseMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentPages\ExpenseMasterList.aspx.cs">
+      <DependentUpon>ExpenseMasterList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentPages\ExpenseMasterList.aspx.designer.cs">
+      <DependentUpon>ExpenseMasterList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentPages\MemoList.aspx.cs">
+      <DependentUpon>MemoList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentPages\MemoList.aspx.designer.cs">
+      <DependentUpon>MemoList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentPages\MemoPrint.aspx.cs">
+      <DependentUpon>MemoPrint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentPages\MemoPrint.aspx.designer.cs">
+      <DependentUpon>MemoPrint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentPages\UserMaster.aspx.cs">
+      <DependentUpon>UserMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentPages\UserMaster.aspx.designer.cs">
+      <DependentUpon>UserMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentPages\UserMasterList.aspx.cs">
+      <DependentUpon>UserMasterList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentPages\UserMasterList.aspx.designer.cs">
+      <DependentUpon>UserMasterList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentPages\VehicleMaster.aspx.cs">
+      <DependentUpon>VehicleMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentPages\VehicleMaster.aspx.designer.cs">
+      <DependentUpon>VehicleMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentPages\VehicleMasterList.aspx.cs">
+      <DependentUpon>VehicleMasterList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentPages\VehicleMasterList.aspx.designer.cs">
+      <DependentUpon>VehicleMasterList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataContext\LifeLineModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LifeLineModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPage.aspx.cs">
+      <DependentUpon>LoginPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginPage.aspx.designer.cs">
+      <DependentUpon>LoginPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\SessionHelper.cs" />
+    <Compile Include="WebServices\ConsigneesList.asmx.cs">
+      <DependentUpon>ConsigneesList.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebServices\VehiclesList.asmx.cs">
+      <DependentUpon>VehiclesList.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bootstrap\css\bootstrap-theme.css.map" />
+    <None Include="bootstrap\css\bootstrap-theme.min.css.map" />
+    <None Include="bootstrap\css\bootstrap.css.map" />
+    <None Include="bootstrap\css\bootstrap.min.css.map" />
+    <None Include="bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <EntityDeploy Include="DataContext\LifeLineModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>LifeLineModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="font-awesome\fonts\fontawesome-webfont.eot" />
+    <None Include="font-awesome\fonts\fontawesome-webfont.svg" />
+    <None Include="font-awesome\fonts\fontawesome-webfont.ttf" />
+    <None Include="font-awesome\fonts\fontawesome-webfont.woff" />
+    <None Include="font-awesome\fonts\fontawesome-webfont.woff2" />
+    <None Include="font-awesome\fonts\FontAwesome.otf" />
+    <None Include="font-awesome\less\animated.less" />
+    <None Include="font-awesome\less\bordered-pulled.less" />
+    <None Include="font-awesome\less\core.less" />
+    <None Include="font-awesome\less\fixed-width.less" />
+    <None Include="font-awesome\less\font-awesome.less" />
+    <None Include="font-awesome\less\icons.less" />
+    <None Include="font-awesome\less\larger.less" />
+    <None Include="font-awesome\less\list.less" />
+    <None Include="font-awesome\less\mixins.less" />
+    <None Include="font-awesome\less\path.less" />
+    <None Include="font-awesome\less\rotated-flipped.less" />
+    <None Include="font-awesome\less\screen-reader.less" />
+    <None Include="font-awesome\less\stacked.less" />
+    <None Include="font-awesome\less\variables.less" />
+    <None Include="font-awesome\scss\font-awesome.scss" />
+    <None Include="font-awesome\scss\_animated.scss" />
+    <None Include="font-awesome\scss\_bordered-pulled.scss" />
+    <None Include="font-awesome\scss\_core.scss" />
+    <None Include="font-awesome\scss\_fixed-width.scss" />
+    <None Include="font-awesome\scss\_icons.scss" />
+    <None Include="font-awesome\scss\_larger.scss" />
+    <None Include="font-awesome\scss\_list.scss" />
+    <None Include="font-awesome\scss\_mixins.scss" />
+    <None Include="font-awesome\scss\_path.scss" />
+    <None Include="font-awesome\scss\_rotated-flipped.scss" />
+    <None Include="font-awesome\scss\_screen-reader.scss" />
+    <None Include="font-awesome\scss\_stacked.scss" />
+    <None Include="font-awesome\scss\_variables.scss" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53311</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
